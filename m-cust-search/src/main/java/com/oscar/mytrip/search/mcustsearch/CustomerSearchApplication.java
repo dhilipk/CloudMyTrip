@@ -6,10 +6,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(value = "com.oscar.mytrip.search")
-public class DemoApplication {
+public class CustomerSearchApplication {
 
 	public static void main(final String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(CustomerSearchApplication.class, args);
 	}
 
 }
