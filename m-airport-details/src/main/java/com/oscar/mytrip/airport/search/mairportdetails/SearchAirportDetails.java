@@ -8,6 +8,6 @@ public class SearchAirportDetails {
 
     @RequestMapping(path = "/")
     public String getAirportName() {
-        return "SAN";
+        return "San Diego";
     }
 }
