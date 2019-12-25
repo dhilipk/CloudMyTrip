@@ -1,10 +1,9 @@
 spring:
-    profiles:
-      active: git
-    cloud:
-      config:
-        server:
-          bootstrap: true
-          git:
-            uri: https://github.com/dhilipk/CloudMyTrip/
-            searchPaths: spring-cloud-config
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dhilipk/CloudMyTrip/
+          searchPaths: spring-cloud-config
