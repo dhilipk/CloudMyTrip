@@ -5,5 +5,5 @@ spring:
     config:
       server:
         git:
-          url: https://github.com/dhilipk/CloudMyTrip/tree/service-ci/spring-cloud-config
+          uri: https://github.com/dhilipk/CloudMyTrip/tree/service-ci/spring-cloud-config
           searchPaths: spring-cloud-config
