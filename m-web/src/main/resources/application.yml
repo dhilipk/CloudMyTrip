@@ -1,0 +1,8 @@
+spring.application.name: mytripweb
+server:
+  port: 8081
+name: Microservice Containerized
+values:
+  EN: Microservice Containerized
+  ES: Microservicio en contenedores
+  DE: Microservice Containerized

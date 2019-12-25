@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "m-web",
+			"path": "m-web"
+		},
+		{
+			"name": "m-cust-search",
+			"path": "m-cust-search"
+		},
+		{
+			"name": "m-airport-details",
+			"path": "m-airport-details"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
