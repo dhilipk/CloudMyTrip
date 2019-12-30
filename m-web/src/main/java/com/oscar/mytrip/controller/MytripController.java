@@ -1,5 +1,7 @@
 package com.oscar.mytrip.controller;
 
+import com.oscar.mytrip.service.AirportSearchSearch;
+import com.oscar.mytrip.service.CustomerSearchService;
 import com.oscar.mytrip.util.MytripProperties;
 
 import org.slf4j.Logger;
@@ -16,12 +18,20 @@ public class MytripController {
 	private static final Logger LOG = LoggerFactory.getLogger(MytripController.class.getName());
 
     @Autowired
-    private MytripProperties mytripProperties;
+	private MytripProperties mytripProperties;
+	
+	@Autowired
+	private CustomerSearchService customerSearchService;
+
+	@Autowired
+	private AirportSearchSearch airportSearchService;
 
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String getApplicationName() {
 		LOG.info("Application Name: " + mytripProperties.getName());
-		return mytripProperties.getName();
+		StringBuilder welcomeMsg = new StringBuilder(mytripProperties.getName() + "welcomes you " );
+		welcomeMsg.append(customerSearchService.getCustomerName() + ", enjoy travelling to " +airportSearchService.getAirportName());
+		return welcomeMsg.toString();
 	}
 	
 

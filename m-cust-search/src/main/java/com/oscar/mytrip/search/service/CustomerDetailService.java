@@ -13,7 +13,7 @@ public class CustomerDetailService {
 
     public CustomerDetailService(){
         Customer customer = new Customer();
-        customer.setName("Kumar");
+        customer.setName("Rajini Murugan");
         customer.setNumber("2398fd984");
         customerSet.add(customer);
     }
