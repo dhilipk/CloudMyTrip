@@ -29,7 +29,7 @@ public class MytripController {
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String getApplicationName() {
 		LOG.info("Application Name: " + mytripProperties.getName());
-		StringBuilder welcomeMsg = new StringBuilder(mytripProperties.getName() + "welcomes you " );
+		StringBuilder welcomeMsg = new StringBuilder(mytripProperties.getName() + " welcomes you " );
 		welcomeMsg.append(customerSearchService.getCustomerName() + ", enjoy travelling to " +airportSearchService.getAirportName());
 		return welcomeMsg.toString();
 	}

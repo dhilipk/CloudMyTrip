@@ -29,5 +29,6 @@ public class WebApplication {
 		public RestTemplate rest() {
 			return new RestTemplateBuilder().build();
 		}
+
 	}
 }

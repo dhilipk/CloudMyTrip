@@ -17,18 +17,18 @@ public class SearchAirportDetails {
     private static final Logger LOG = LoggerFactory.getLogger(SearchAirportDetails.class);
 
     @Autowired
-    private AirportSearchProperties airportSearchPorperties;
+    private AirportSearchProperties airportSearchProperties;
 
     @RequestMapping(path = "/")
     public String getAirportName() {
-        LOG.info("Default Airport Name" + airportSearchPorperties.getAirports());
-        return airportSearchPorperties.getAirports() != null ? "San Diego" : airportSearchPorperties.getAirports().get(0);
+        LOG.info("Default Airport Name" + airportSearchProperties.getAirports());
+        return airportSearchProperties.getAirports() != null ? "San Diego" : airportSearchProperties.getAirports().get(0);
     }
 
     @RequestMapping(path = "/{airportCode}", method = RequestMethod.GET)
     public String getAirportName(@PathParam(value = "airportCode") String airportCode) {
         LOG.info("AirportCode : " + airportCode);
-        LOG.info("AirportName : " + airportSearchPorperties.getAirportCodes().get(airportCode));
-        return airportSearchPorperties.getAirportCodes().getOrDefault(airportCode, "Omaha");
+        LOG.info("AirportName : " + airportSearchProperties.getAirportCodes().get(airportCode));
+        return airportSearchProperties.getAirportCodes().getOrDefault(airportCode, "Omaha");
     }
 }
