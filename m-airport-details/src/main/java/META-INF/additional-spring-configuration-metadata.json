@@ -1,0 +1,7 @@
+{"properties": [
+  {
+    "name": "airportCodes",
+    "type": "java.util.Map",
+    "description": "A description for 'airportCodes'"
+  }
+]}
