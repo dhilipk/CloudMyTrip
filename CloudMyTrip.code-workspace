@@ -14,6 +14,10 @@
 		{
 			"name": "m-airport-details",
 			"path": "m-airport-details"
+		},
+		{
+			"name": "zipkin-app-server",
+			"path": "zipkin-app-server"
 		}
 	],
 	"settings": {
