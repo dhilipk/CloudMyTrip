@@ -5,14 +5,15 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class AirportSearchSearch {
+public class AirportSearchService {
 
     @Autowired
     private RestTemplate rest;
-    private String url = "http://localhost:9090/";
+    private String url = "http://airportDetails";
 
     public String getAirportName() {
         return rest.getForObject(url, String.class);
     }
+
 
 }

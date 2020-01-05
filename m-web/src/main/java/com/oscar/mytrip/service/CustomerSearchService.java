@@ -9,7 +9,7 @@ public class CustomerSearchService {
 
     @Autowired
     private RestTemplate rest;
-    private String url = "http://localhost:8090/";
+    private String url = "http://customerSearch";
 
     public String getCustomerName() {
         return rest.getForObject(url, String.class);

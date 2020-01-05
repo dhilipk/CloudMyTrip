@@ -1,6 +1,6 @@
 package com.oscar.mytrip.controller;
 
-import com.oscar.mytrip.service.AirportSearchSearch;
+import com.oscar.mytrip.service.AirportSearchService;
 import com.oscar.mytrip.service.CustomerSearchService;
 import com.oscar.mytrip.util.MytripProperties;
 
@@ -24,7 +24,7 @@ public class MytripController {
 	private CustomerSearchService customerSearchService;
 
 	@Autowired
-	private AirportSearchSearch airportSearchService;
+	private AirportSearchService airportSearchService;
 
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String getApplicationName() {
